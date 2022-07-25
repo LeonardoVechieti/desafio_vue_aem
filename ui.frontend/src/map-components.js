@@ -4,6 +4,7 @@ import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
 import Image from './components/Image/Image'
+import MyText from './components/micro/MyText/MyText'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
@@ -68,3 +69,6 @@ MapTo('vue/components/container')(
     }
   }
 )
+
+// MyText Component Mapping
+MapTo('vue/components/micro/my-text')(MyText)
