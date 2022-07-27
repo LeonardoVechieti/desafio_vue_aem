@@ -1,6 +1,6 @@
 <template>
-<div class="containerButton">
-    <button :class="classButton" @click.prevent="event">{{ text }}</button>
+<div >
+    <button class="button" @click.prevent="event">{{ text }}</button>
 </div>
 </template>
 
@@ -12,9 +12,6 @@ export default {
     text: {
       type: String,
       default: 'defaut'
-    },
-    classButton: {
-      type: String
     }
   },
   methods: {
