@@ -7,6 +7,9 @@ import Image from './components/Image/Image'
 import MyText from './components/micro/MyText/MyText'
 import MyTitle from './components/micro/MyTitle/MyTitle'
 import MyButton from './components/micro/MyButton/MyButton'
+import MyHeader from './components/containers/MyHeader/MyHeader'
+import MyMain from './components/containers/MyMain/MyMain'
+import MyFooter from './components/containers/MyFooter/MyFooter'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
@@ -80,3 +83,12 @@ MapTo('vue/components/my-title')(MyTitle)
 
 // MyButton Component Mapping
 MapTo('vue/components/my-button')(MyButton)
+
+// MyFooter Component Mapping
+MapTo('vue/components/my-footer')(MyFooter)
+
+// MyHeader Component Mapping
+MapTo('vue/components/my-header')(MyHeader)
+
+// MyMain Component Mapping
+MapTo('vue/components/my-main')(MyMain)

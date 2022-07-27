@@ -1,11 +1,11 @@
 <template>
   <div class="title">
-    <h1 :class="nameClass" v-if="type === 'h1'">{{ titleMsg }}</h1>
-    <h2 :class="nameClass" v-if="type === 'h2'">{{ titleMsg }}</h2>
-    <h3 :class="nameClass" v-if="type === 'h3'">{{ titleMsg }}</h3>
-    <h4 :class="nameClass" v-if="type === 'h4'">{{ titleMsg }}</h4>
-    <h5 :class="nameClass" v-if="type === 'h5'">{{ titleMsg }}</h5>
-    <h6 :class="nameClass" v-if="type === 'h6'">{{ titleMsg }}</h6>
+    <h1 :class="titleClass" v-if="type === 'h1'">{{ msg }}</h1>
+    <h2 :class="titleClass" v-if="type === 'h2'">{{ msg }}</h2>
+    <h3 :class="titleClass" v-if="type === 'h3'">{{ msg }}</h3>
+    <h4 :class="titleClass" v-if="type === 'h4'">{{ msg }}</h4>
+    <h5 :class="titleClass" v-if="type === 'h5'">{{ msg }}</h5>
+    <h6 :class="titleClass" v-if="type === 'h6'">{{ msg }}</h6>
   </div>
 </template>
 
@@ -19,11 +19,11 @@ export default {
       default: 'h1',
       require: true
     },
-    nameClass: {
+    titleClass: {
       type: String,
-      default: 'nameClass'
+      default: 'titleClass'
     },
-    titleMsg: {
+    msg: {
       type: String,
       default: 'Messagen default'
     }
