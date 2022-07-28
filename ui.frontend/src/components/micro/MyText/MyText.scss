@@ -1,12 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .headerText {
   font-family: 'Inconsolata';
   font-size: 1.5em;
   font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+  }
 }
 .mainText {
   font-family: 'Space Mono';
   font-size: 1.5em;
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+  }
+}
+.footerText {
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+  color: #BDBDBD;
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+  }
 }
