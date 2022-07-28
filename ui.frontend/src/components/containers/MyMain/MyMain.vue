@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="main-image">
-      <p>ola Image</p>
+      <MyImage :src="src" class="image" />
     </div>
     <div class="main-content">
       <div class="title">
@@ -19,13 +19,21 @@
 import MyTitle from '../../micro/MyTitle/MyTitle.vue'
 import MyText from '../../micro/MyText/MyText.vue'
 import MyButton from '../../micro/MyButton/MyButton.vue'
+import MyImage from '../../micro/MyImage/MyImage.vue'
 export default {
   // eslint-disable-next-line
     name: "MyMain",
   components: {
     MyTitle,
     MyText,
-    MyButton
+    MyButton,
+    MyImage
+  },
+  props: {
+    src: {
+      type: String,
+      default: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
+    }
   }
 
 }
