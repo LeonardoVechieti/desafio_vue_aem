@@ -61,7 +61,7 @@ export default {
     },
     colorButton: {
       type: String,
-      default: '#000000'
+      default: '#333333'
     },
     titleColor: {
       type: String,
