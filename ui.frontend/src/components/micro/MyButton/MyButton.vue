@@ -1,6 +1,6 @@
 <template>
 <div >
-    <button class="button" @click.prevent="event">{{ text }}</button>
+    <button class="button" :style="{ 'color': textColor , 'font-family': fontButton , 'background-color': colorButton}" @click.prevent="event" >{{ textButton }}</button>
 </div>
 </template>
 
@@ -9,9 +9,21 @@
 export default {
   name: 'MyButton',
   props: {
-    text: {
+    textButton: {
       type: String,
       default: 'defaut'
+    },
+    textColor: {
+      type: String,
+      default: '#ffffff'
+    },
+    fontButton: {
+      type: String,
+      default: 'Space Mono'
+    },
+    colorButton: {
+      type: String,
+      default: '#333333'
     }
   },
   methods: {

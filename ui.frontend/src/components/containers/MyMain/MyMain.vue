@@ -10,7 +10,7 @@
       <div class="text">
         <MyText :msg="textDescription" textClass="mainText" :fontText="fontText"/>
       </div>
-      <MyButton text="BACK TO HOMEPAGE"/>
+      <MyButton :textButton="textButton" :fontButton="fontButton" :textColor="textColor" :colorButton="colorButton"/>
     </div>
   </div>
 </template>
@@ -47,6 +47,22 @@ export default {
     textDescription: {
       type: String,
       default: 'The page you are looking for might be removed or is temporarily unavailable'
+    },
+    textButton: {
+      type: String,
+      default: 'BACK TO HOMEPAGE'
+    },
+    fontButton: {
+      type: String,
+      default: 'Space Mono'
+    },
+    textColor: {
+      type: String,
+      default: '#ffffff'
+    },
+    colorButton: {
+      type: String,
+      default: '#000000'
     }
 
   }
