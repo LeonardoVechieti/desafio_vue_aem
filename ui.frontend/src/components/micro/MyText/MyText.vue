@@ -1,6 +1,6 @@
 <template>
-  <div class="textContainer">
-    <p type="text" :class="textClass">{{ msg }}</p>
+  <div>
+    <p type="text" :class="textClass" :style="{ 'font-family': fontText }">{{ msg }}</p>
   </div>
 </template>
 
@@ -16,6 +16,10 @@ export default {
     textClass: {
       type: String,
       default: 'textClass'
+    },
+    fontText: {
+      type: String,
+      default: 'Space Mono'
     }
   }
 }

@@ -11,6 +11,7 @@ import MyImage from './components/micro/MyImage/MyImage'
 import MyHeader from './components/containers/MyHeader/MyHeader'
 import MyMain from './components/containers/MyMain/MyMain'
 import MyFooter from './components/containers/MyFooter/MyFooter'
+import PageError404 from './components/containers/PageError404/PageError404'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
@@ -96,3 +97,6 @@ MapTo('vue/components/my-main')(MyMain)
 
 // MyImage Component Mapping
 MapTo('vue/components/my-image')(MyImage)
+
+// PageError404 Component  Mapping
+MapTo('vue/components/page-error-404')(PageError404)
