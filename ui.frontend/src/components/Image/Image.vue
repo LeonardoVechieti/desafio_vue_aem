@@ -16,5 +16,8 @@ export default {
 <style scoped>
 img {
   max-width: 40vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

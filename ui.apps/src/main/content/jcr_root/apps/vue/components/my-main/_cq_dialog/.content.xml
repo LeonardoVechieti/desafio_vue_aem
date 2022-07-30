@@ -55,7 +55,62 @@
                                         <h2 jcr:primaryType="nt:unstructured" text="Nível 2 (H2)" value="h2"/>
                                         <H3 jcr:primaryType="nt:unstructured" text="Nível 3 (H3)" value="h3"/>
                                 </items>
-                            </nivelTitle> 
+                            </nivelTitle>
+                            <textColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Cor do texto"
+                                showDefaultColors="false"
+                                name="./titleColor">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <preto
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#000000"/>
+                                    <azul
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#0000FF"/>
+                                    <verde
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <vermelho
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                    <cinza
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#898686"/>
+                                    <branco
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFFFFF"/>
+                                    <rosa
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF00FF"/>
+                                    <laranja
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFA500"/>
+                                    <roxo 
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#800080"/>
+                                    <marrom 
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#8B4513"/>
+                                    <azul-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FFFF"/>
+                                    <verde-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <vermelho-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                    <cinza-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#C0C0C0"/>
+                                    <laranja-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#e6d218"/>
+                                </items>
+                            </textColor> 
                         </items>
                     </title>
                     <!-- conteudo -->
@@ -87,6 +142,61 @@
                                         <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>      
                                 </items>
                             </fontText> 
+                            <textColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Cor do texto"
+                                showDefaultColors="false"
+                                name="./contentColor">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <preto
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#000000"/>
+                                    <azul
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#0000FF"/>
+                                    <verde
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <vermelho
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                    <cinza
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#898686"/>
+                                    <branco
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFFFFF"/>
+                                    <rosa
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF00FF"/>
+                                    <laranja
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFA500"/>
+                                    <roxo 
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#800080"/>
+                                    <marrom 
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#8B4513"/>
+                                    <azul-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FFFF"/>
+                                    <verde-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <vermelho-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                    <cinza-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#C0C0C0"/>
+                                    <laranja-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#e6d218"/>
+                                </items>
+                            </textColor>
                         </items>
                     </content>
                     <!-- botoes -->
@@ -123,22 +233,54 @@
                                 sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
                                 fieldLabel="Cor do texto"
                                 showDefaultColors="false"
-                                emptyText="Padrão: #000000"
                                 name="./textColor">
                                 <items
                                     jcr:primaryType="nt:unstructured">
-                                    <black
+                                    <preto
                                         jcr:primaryType="nt:unstructured"
                                         value="#000000"/>
-                                    <blue
+                                    <azul
                                         jcr:primaryType="nt:unstructured"
                                         value="#0000FF"/>
-                                    <green
+                                    <verde
                                         jcr:primaryType="nt:unstructured"
                                         value="#00FF00"/>
-                                    <red
+                                    <vermelho
                                         jcr:primaryType="nt:unstructured"
                                         value="#FF0000"/>
+                                    <cinza
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#898686"/>
+                                    <branco
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFFFFF"/>
+                                    <rosa
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF00FF"/>
+                                    <laranja
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFA500"/>
+                                    <roxo 
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#800080"/>
+                                    <marrom 
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#8B4513"/>
+                                    <azul-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FFFF"/>
+                                    <verde-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <vermelho-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                    <cinza-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#C0C0C0"/>
+                                    <laranja-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#e6d218"/>
                                 </items>
                             </textColor>
                             <colorButton
@@ -146,27 +288,59 @@
                                 sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
                                 fieldLabel="Cor do botão"
                                 showDefaultColors="false"
-                                emptyText="Padrão: #000000"
                                 name="./colorButton">
                                 <items
                                     jcr:primaryType="nt:unstructured">
-                                    <black
+                                    <preto
                                         jcr:primaryType="nt:unstructured"
                                         value="#000000"/>
-                                    <blue
+                                    <azul
                                         jcr:primaryType="nt:unstructured"
                                         value="#0000FF"/>
-                                    <green
+                                    <verde
                                         jcr:primaryType="nt:unstructured"
                                         value="#00FF00"/>
-                                    <red
+                                    <vermelho
                                         jcr:primaryType="nt:unstructured"
                                         value="#FF0000"/>
+                                    <cinza
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#898686"/>
+                                    <branco
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFFFFF"/>
+                                    <rosa
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF00FF"/>
+                                    <laranja
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FFA500"/>
+                                    <roxo 
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#800080"/>
+                                    <marrom 
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#8B4513"/>
+                                    <azul-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FFFF"/>
+                                    <verde-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <vermelho-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                    <cinza-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#C0C0C0"/>
+                                    <laranja-claro
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#e6d218"/>
                                 </items>
                             </colorButton>
                         </items>
                     </buttons>
-                    
+
                 </items>
             </tabs>
         </items>
