@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <MyText :msg="textFooter" textClass="footerText" class="footer-text"/>
+    <MyText :msg="textFooter" textClass="footerText" class="footer-text" :fontText="fontText" :textColor="textColor"/>
   </div>
 </template>
 
@@ -16,6 +16,14 @@ export default {
     textFooter: {
       type: String,
       default: 'created by Administrador'
+    },
+    fontText: {
+      type: String,
+      default: 'Montserrat'
+    },
+    textColor: {
+      type: String,
+      default: '#BDBDBD'
     }
   }
 

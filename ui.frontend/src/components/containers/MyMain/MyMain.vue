@@ -1,14 +1,13 @@
 <template>
   <div class="main">
     <div class="main-image">
-      <!-- <MyImage :src="src" class="image" /> -->
     </div>
     <div class="main-content">
       <div class="title">
-        <MyTitle :msg="textTitle" :titleClass="fontTitle" :type="nivelTitle"/>
+        <MyTitle :msg="textTitle" :titleClass="fontTitle" :type="nivelTitle" :titleColor="titleColor"/>
       </div>
       <div class="text">
-        <MyText :msg="textDescription" textClass="mainText" :fontText="fontText"/>
+        <MyText :msg="textDescription" textClass="mainText" :fontText="fontText" :textColor="contentColor"/>
       </div>
       <MyButton :textButton="textButton" :fontButton="fontButton" :textColor="textColor" :colorButton="colorButton"/>
     </div>
@@ -61,6 +60,14 @@ export default {
       default: '#ffffff'
     },
     colorButton: {
+      type: String,
+      default: '#000000'
+    },
+    titleColor: {
+      type: String,
+      default: '#000000'
+    },
+    contentColor: {
       type: String,
       default: '#000000'
     }

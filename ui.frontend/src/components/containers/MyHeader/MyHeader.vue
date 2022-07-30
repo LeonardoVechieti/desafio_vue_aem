@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <MyText :msg="textHeader" textClass="headerText" class="header-text"/>
+    <MyText :msg="textHeader" textClass="headerText" class="header-text" :textColor="textColor" :fontText="fontText"/>
   </div>
 </template>
 
@@ -16,6 +16,14 @@ export default {
     textHeader: {
       type: String,
       default: '404 NOT FOUND'
+    },
+    fontText: {
+      type: String,
+      default: 'Inconsolata'
+    },
+    textColor: {
+      type: String,
+      default: '#000000'
     }
   }
 
