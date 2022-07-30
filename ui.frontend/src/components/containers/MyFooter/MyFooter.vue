@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <MyText msg="created by Leonardo Vechieti" textClass="footerText" class="footer-text"/>
+    <MyText :msg="textFooter" textClass="footerText" class="footer-text"/>
   </div>
 </template>
 
@@ -11,6 +11,12 @@ export default {
   name: "MyFooter",
   components: {
     MyText
+  },
+  props: {
+    textFooter: {
+      type: String,
+      default: 'created by Administrador'
+    }
   }
 
 }
