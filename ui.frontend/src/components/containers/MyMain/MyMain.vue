@@ -9,7 +9,9 @@
       <div class="text">
         <MyText :msg="textDescription" textClass="mainText" :fontText="fontText" :textColor="contentColor"/>
       </div>
-      <MyButton :textButton="textButton" :fontButton="fontButton" :textColor="textColor" :colorButton="colorButton"/>
+      <div class="button">
+        <MyButton :textButton="textButton" :buttonClass="buttonClass" :buttonColor="buttonColor" :fontText="fontText"/>
+      </div>
     </div>
   </div>
 </template>

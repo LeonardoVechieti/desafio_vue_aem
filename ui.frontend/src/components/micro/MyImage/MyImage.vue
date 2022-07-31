@@ -13,11 +13,6 @@ export default {
 }
 </script>
 
-<style scoped>
-img {
-  max-width: 40vw;
-  @media (max-width: 768px){
-    max-width: 70vw;
-  }
-}
+<style lang="scss" scoped>
+@import "./MyImage.scss";
 </style>
