@@ -11,7 +11,7 @@ export default {
   props: {
     textButton: {
       type: String,
-      default: 'defaut'
+      default: 'Button'
     },
     textColor: {
       type: String,
