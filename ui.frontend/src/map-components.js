@@ -4,6 +4,13 @@ import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
 import Image from './components/Image/Image'
+import MyText from './components/micro/MyText/MyText'
+import MyTitle from './components/micro/MyTitle/MyTitle'
+import MyButton from './components/micro/MyButton/MyButton'
+import MyImage from './components/micro/MyImage/MyImage'
+import MyHeader from './components/containers/MyHeader/MyHeader'
+import MyMain from './components/containers/MyMain/MyMain'
+import MyFooter from './components/containers/MyFooter/MyFooter'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
   withComponentMappingContext,
@@ -68,3 +75,24 @@ MapTo('vue/components/container')(
     }
   }
 )
+
+// MyText Component Mapping
+MapTo('vue/components/my-text')(MyText)
+
+// MyTitle Component Mapping
+MapTo('vue/components/my-title')(MyTitle)
+
+// MyButton Component Mapping
+MapTo('vue/components/my-button')(MyButton)
+
+// MyFooter Component Mapping
+MapTo('vue/components/my-footer')(MyFooter)
+
+// MyHeader Component Mapping
+MapTo('vue/components/my-header')(MyHeader)
+
+// MyMain Component Mapping
+MapTo('vue/components/my-main')(MyMain)
+
+// MyImage Component Mapping
+MapTo('vue/components/my-image')(MyImage)

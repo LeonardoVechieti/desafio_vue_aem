@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Image',
+  name: 'MyImage',
   props: {
     src: {
       type: String
@@ -13,11 +13,6 @@ export default {
 }
 </script>
 
-<style scoped>
-img {
-  max-width: 40vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+<style lang="scss" scoped>
+@import "./MyImage.scss";
 </style>
