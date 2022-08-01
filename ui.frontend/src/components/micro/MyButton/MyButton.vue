@@ -1,6 +1,6 @@
 <template>
 <div >
-    <button class="button" :style="{ 'color': textColor , 'font-family': fontButton , 'background-color': colorButton}" @click.prevent="event" >{{ textButton }}</button>
+    <button class="button" :style="{ 'color': textColor , 'font-family': fontButton , 'background-color': colorButton , 'border-radius': borderRadius }" @click.prevent="event" >{{ textButton }}</button>
 </div>
 </template>
 
@@ -24,11 +24,15 @@ export default {
     colorButton: {
       type: String,
       default: '#333333'
+    },
+    borderRadius: {
+      type: String,
+      default: '0'
     }
   },
   methods: {
     event () {
-      this.$emit('click')
+      // this.$emit('click')
     }
   }
 }

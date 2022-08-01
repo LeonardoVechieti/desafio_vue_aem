@@ -338,6 +338,14 @@
                                         value="#e6d218"/>
                                 </items>
                             </colorButton>
+                            <border
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./borderRadius"
+                                value="10px"
+                                uncheckedValue="0"
+                                checked="5px"
+                                text="Cantos arrendondados"/>
                         </items>
                     </buttons>
 

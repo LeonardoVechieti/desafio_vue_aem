@@ -10,7 +10,7 @@
         <MyText :msg="textDescription" textClass="mainText" :fontText="fontText" :textColor="contentColor"/>
       </div>
       <div class="button">
-        <MyButton :textButton="textButton" :buttonClass="buttonClass" :buttonColor="buttonColor" :fontText="fontText"/>
+        <MyButton :textButton="textButton" :buttonColor="buttonColor" :fontText="fontText" :borderRadius="borderRadius"/>
       </div>
     </div>
   </div>
@@ -72,6 +72,10 @@ export default {
     contentColor: {
       type: String,
       default: '#000000'
+    },
+    borderRadius: {
+      type: String,
+      default: '0'
     }
 
   }
